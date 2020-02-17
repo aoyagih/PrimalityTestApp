@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func judge(_ sender: Any) {
         //判定buttonの処理
         print("clicked")
-        let inputValue = Int(self.textField.text ?? "")!
+        let inputValue = Int(self.textField.text ?? "0") ?? 0
         print(inputValue)
         
         var isPrime: Bool = true
